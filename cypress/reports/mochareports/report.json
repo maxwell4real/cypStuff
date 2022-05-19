@@ -1,0 +1,246 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 4,
+    "passes": 2,
+    "pending": 1,
+    "failures": 1,
+    "start": "2022-05-19T17:54:51.264Z",
+    "end": "2022-05-19T17:56:04.711Z",
+    "duration": 53625,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 25,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f8ee2dfc-1118-4331-8dcd-4aa3ba63c008",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/forgotpassword.spec.js",
+      "file": "cypress/integration/testcases/forgotpassword.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "236b9e43-4456-49f5-a7d9-1b295e8263f5",
+          "title": "forgot password",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "As a user I want to reset password",
+              "fullTitle": "forgot password As a user I want to reset password",
+              "timedOut": null,
+              "duration": 5244,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.login').click();\ncy.get('.lost_password > a').click();\ncy.get('#email').type('laura@gmail.com');\ncy.get('.submit > .btn > span').click();\ncy.get('.alert').contains('A confirmation email has been sent to your address: laura@gmail.com');",
+              "err": {
+                "message": "CypressError: Timed out after waiting `5000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `5000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `forgot password`",
+                "estack": "CypressError: Timed out after waiting `5000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `5000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `forgot password`\n    at timedOutWaitingForPageLoad (http://automationpractice.com/__cypress/runner/cypress_runner.js:158308:72)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:159361:16\n    at tryCatcher (http://automationpractice.com/__cypress/runner/cypress_runner.js:13022:23)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:8144:41\n    at tryCatcher (http://automationpractice.com/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (http://automationpractice.com/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (http://automationpractice.com/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (http://automationpractice.com/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (http://automationpractice.com/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (http://automationpractice.com/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (http://automationpractice.com/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://automationpractice.com/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (http://automationpractice.com/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/testcases/forgotpassword.spec.js:102:8)",
+                "diff": null
+              },
+              "uuid": "5f2c2e15-8c88-44e2-b191-5cc9099882b3",
+              "parentUUID": "236b9e43-4456-49f5-a7d9-1b295e8263f5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5f2c2e15-8c88-44e2-b191-5cc9099882b3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5244,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "988e72ef-6860-42a7-87f1-08d8991b0021",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/login.spec.js",
+      "file": "cypress/integration/testcases/login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5bc3ca72-85f5-4237-a73b-303a6ca3918c",
+          "title": "Login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check user can login succeessfully",
+              "fullTitle": "Login Test Check user can login succeessfully",
+              "timedOut": null,
+              "duration": 33632,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php');\nhomepage.clickSignIn();\nsigninpage.login(\"maxtesting6+2@gmail.com\", \"Today01\");\naccountpage.verifyMyAccount();\naccountpage.clickSignOutBtn();",
+              "err": {},
+              "uuid": "10514149-cf68-4386-a3a0-a86148ae34a3",
+              "parentUUID": "5bc3ca72-85f5-4237-a73b-303a6ca3918c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check error message is displayed when user enter incorrect details",
+              "fullTitle": "Login Test check error message is displayed when user enter incorrect details",
+              "timedOut": null,
+              "duration": 14749,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php');\nhomepage.clickSignIn();\nsigninpage.login(\"maxtestin@aol.com\", \"Today01\");\ncy.get('#center_column > :nth-child(2) > p').contains('There is 1 error');",
+              "err": {},
+              "uuid": "8bd44da7-9529-46a8-8ee4-f26ede8762e3",
+              "parentUUID": "5bc3ca72-85f5-4237-a73b-303a6ca3918c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "10514149-cf68-4386-a3a0-a86148ae34a3",
+            "8bd44da7-9529-46a8-8ee4-f26ede8762e3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 48381,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6cb17f35-e6e8-4063-9212-e92003b62689",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/register.spec.js",
+      "file": "cypress/integration/testcases/register.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab8659f7-c22a-4488-943c-596ebf8c0271",
+          "title": "Resgister Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "As a new user I want to create an account",
+              "fullTitle": "Resgister Test As a new user I want to create an account",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "7f55f150-b472-405e-9b25-8d2b1ca70ba3",
+              "parentUUID": "ab8659f7-c22a-4488-943c-596ebf8c0271",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [
+            "7f55f150-b472-405e-9b25-8d2b1ca70ba3"
+          ],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

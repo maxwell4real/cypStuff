@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-19T17:55:04.644Z",
+    "end": "2022-05-19T17:55:53.109Z",
+    "duration": 48465,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "988e72ef-6860-42a7-87f1-08d8991b0021",
+      "title": "",
+      "fullFile": "cypress/integration/testcases/login.spec.js",
+      "file": "cypress/integration/testcases/login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5bc3ca72-85f5-4237-a73b-303a6ca3918c",
+          "title": "Login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check user can login succeessfully",
+              "fullTitle": "Login Test Check user can login succeessfully",
+              "timedOut": null,
+              "duration": 33632,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php');\nhomepage.clickSignIn();\nsigninpage.login(\"maxtesting6+2@gmail.com\", \"Today01\");\naccountpage.verifyMyAccount();\naccountpage.clickSignOutBtn();",
+              "err": {},
+              "uuid": "10514149-cf68-4386-a3a0-a86148ae34a3",
+              "parentUUID": "5bc3ca72-85f5-4237-a73b-303a6ca3918c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check error message is displayed when user enter incorrect details",
+              "fullTitle": "Login Test check error message is displayed when user enter incorrect details",
+              "timedOut": null,
+              "duration": 14749,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php');\nhomepage.clickSignIn();\nsigninpage.login(\"maxtestin@aol.com\", \"Today01\");\ncy.get('#center_column > :nth-child(2) > p').contains('There is 1 error');",
+              "err": {},
+              "uuid": "8bd44da7-9529-46a8-8ee4-f26ede8762e3",
+              "parentUUID": "5bc3ca72-85f5-4237-a73b-303a6ca3918c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "10514149-cf68-4386-a3a0-a86148ae34a3",
+            "8bd44da7-9529-46a8-8ee4-f26ede8762e3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 48381,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
